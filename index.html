@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/274caf772a.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">works</a></li>
+                    <li><a href="#tesimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <button class="btn3">Sign In</button>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" id="bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Yogi, Mystic, Author</p>
+                <h1>Hi, I'm <span>Sadhguru</span><br>from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I have a multi-faceted aim that is centered around promoting human wellbeing and creating a more harmonious world.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Yoga and Meditation</span><br>studing and practicing yoga and meditation for over four decades.</li>
+                            <li><span>Writing</span><br>I have written several books on spirituality, including "Inner Engineering: A Yogi's Guide to Joy," "Adiyogi: The Source of Yoga," and "Mystics Musings."</li>
+                            <li><span>Leadership</span><br>As the founder of the Isha Foundation, I have demonstrated strong
+                                 leadership skills in building and managing a global organization.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Spiritual Quest</span><br>From a young age, I was drawn to spirituality and spent many years exploring various spiritual practices and traditions.</li>
+                            <li><span>Mystic Journey</span><br>  In 1982, I had a profound mystical experience that transformed his life. I spent several years in intense spiritual practice and eventually became a realized yogi.</li>
+                            <li><span>Social and Environmental Activism</span><br> I have launched several initiatives aimed at promoting sustainable living, reviving India's dying rivers, and improving the quality of life for rural communities.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Schooling</span><br>completed schooling at the Chamrajendra Academy in Mysore.
+                            <li><span>Engineering</span><br>Bachelor's degree in mechanical engineering from the University of Mysore.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                      <!-- Slides -->
+                      <div class="swiper-slide"><a href="https://isha.sadhguru.org/us/en/events/special-events/rudraksha-diksha-initiation-with-sadhguru"><img src="images/work-1.jpg"></a></div>
+                      <div class="swiper-slide"><a href="https://www.covaipost.com/coimbatore/13-rivers-rejuvenation-project-in-line-with-rally-for-rivers-policy-recommendations-union-minister-thanks-sadhguru/"><img src="images/work-2.jpg"></a></div>
+                      <div class="swiper-slide"><a href="https://innerengineering.sadhguru.org/online?utm_campaign=ieodiscount&utm_source=iso_home_startjourney&utm_medium=website"><img src="images/work-3.jpg"></a></div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                  
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="tesimonials">
+        <div class="container">
+            <h1 class="sub-title">My Testimonies</i></h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa fa-quote-left"></i>
+                    <h2> Jane, USA</h2>
+                    <p>"Sadhguru has transformed my life in so many ways. His wisdom and guidance have helped me find purpose and meaning in my life, and I am forever grateful for his teachings."</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-quote-left"></i>
+                    <h2>James, Canada</h2>
+                    <p>"I had been suffering from depression for years, and after attending Sadhguru's Inner Engineering program, I felt like a weight had been lifted off my shoulders. His teachings gave me a new perspective on life, and I am now living with more joy and fulfillment."</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa fa-quote-left"></i>
+                    <h2>Priya, India</h2>
+                    <p>"Sadhguru's Rally for Rivers campaign has been a game-changer for India. His efforts to revive the country's dying rivers have inspired millions of people to take action and make a difference."</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <br> -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i>socialmedia@ishafoundation.org</p>
+                    <p><i class="fas fa-phone-square-alt"></i>083000 83111</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/sadhguru/"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/SadhguruJV"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/Sadhguru/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://in.linkedin.com/company/sadhgurujv"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <p>Made with <span><i class="fa-solid fa-heart"></i></span> By <a href="./team.html">us</a></p>
+    </footer>
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link")
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        var bars = document.getElementById("bars");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+            bars.style.opacity = "0";
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+            bars.style.opacity = "1";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwMQiZv_UOBw9tIfILlt26V6JnrEPHtfand_WVDK3XyFifmRSjXfumMCqzYJebEjeVC/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>const swiper = new Swiper('.swiper', {
+    autoplay:{
+        delay:3000,
+        disableOnInteraction:false,
+    },
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable:true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }
+  });</script>
+</body>
+
+</html>
